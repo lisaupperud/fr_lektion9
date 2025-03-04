@@ -1,3 +1,7 @@
- 
+<main>
+  <div *ngFor="let item of productData">
+    <app-product [item]="item" />
+  </div>
+</main>
 
 <router-outlet />

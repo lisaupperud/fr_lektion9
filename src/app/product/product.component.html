@@ -1,1 +1,8 @@
-<p>product works!</p>
+<main class="productCard">
+  <img src="{{ item.image }}" alt="product-image" />
+  <h3>{{ item.title }}</h3>
+  <p>{{ item.description }}</p>
+  <p>${{ item.price }}</p>
+  <p>{{ item.category }}</p>
+  <p>{{ item.rating.rate }}/5 out of {{ item.rating.count }} rates</p>
+</main>
