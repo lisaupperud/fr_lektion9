@@ -1,13 +1,26 @@
 .productCard {
-    max-width: 10rem;
-    padding: 1.5rem;
-    padding-bottom: 2rem;
-    margin: 1.5rem;
-    box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.208);
+  max-width: calc(50% + 1.5rem);
+  padding: 1.5rem, 1.5rem;
+  margin: 1.5rem;
+  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+}
+
+.productCard > h3 {
+  font-size: min(2vw, 50px);
 }
 
 .productCard > img {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
+  width: 100%;
+  height: min(50vw, 350px);
+  object-fit: contain;
+  margin-top: 1.5rem;
+}
+
+.productCardSection {
+  padding: 1.5rem;
+  text-align: center;
 }
